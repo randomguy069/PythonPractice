@@ -1,4 +1,7 @@
-mylist = [1,2,3,4,5]
+fi = open("fruits.txt",'r')
 
-for i in mylist:
+content = fi.readlines()
+con =[i.rstrip("\n") for i in content]
+for i in con:
     print (i)
+fi.close()
